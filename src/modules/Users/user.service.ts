@@ -2,6 +2,7 @@ import userModel from './user.model'
 import { IUser } from './user.interface'
 import config from '../../config'
 import { genarateUserId } from './user.utils'
+import ApiError from '../../errors/ApiError'
 
 const createUserInDB = async (user: IUser): Promise<IUser | null> => {
   // auto gentaretd incrimental id
@@ -15,12 +16,10 @@ const createUserInDB = async (user: IUser): Promise<IUser | null> => {
 
   const createUser = await userModel.create(user)
   if (!createUser) {
-    throw new Error('Error creating user')
+    throw new ApiError(400, 'Error creating user')
   } else {
     return createUser
   }
 }
-
-
 
 export { createUserInDB }
