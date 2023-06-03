@@ -1,9 +1,9 @@
-import { Request, Response } from 'express'
+import { NextFunction, Request, Response } from 'express'
 import { createUserInDB } from './user.service'
 
-const createUser = async (req: Request, res: Response) => {
+const createUser = async (req: Request, res: Response, next: NextFunction) => {
   try {
-    const {user} = req.body
+    const { user } = req.body
     const result = await createUserInDB(user)
     res.status(201).json({
       success: true,
@@ -11,10 +11,7 @@ const createUser = async (req: Request, res: Response) => {
       data: result,
     })
   } catch (error) {
-    res.status(400).json({
-      success: false,
-      message: error,
-    })
+    next(error)
   }
 }
 

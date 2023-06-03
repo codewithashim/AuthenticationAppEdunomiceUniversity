@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/codewithashim/Web Application Drive/Programming Hero/Project/University Management System/Software/backend/logs/errors/.bb91673a3dbbed0b95fb1384a8def0b240db4925-audit.json",
+    "files": [
+        {
+            "date": 1685824324836,
+            "name": "/home/codewithashim/Web Application Drive/Programming Hero/Project/University Management System/Software/backend/logs/errors/04-06-2023-02-errors.log",
+            "hash": "f7fdfee805f39f8887ad9c7780d1affb642221fc214563a42de2fefd9590682f"
+        }
+    ],
+    "hashType": "sha256"
+}
