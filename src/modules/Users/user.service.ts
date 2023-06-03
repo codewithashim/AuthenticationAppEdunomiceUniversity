@@ -5,9 +5,6 @@ import { genarateUserId } from './user.utils'
 import ApiError from '../../errors/ApiError'
 
 const createUserInDB = async (user: IUser): Promise<IUser | null> => {
-  // auto gentaretd incrimental id
-  // default student password
-
   const id = await genarateUserId()
   user.id = id
   if (!user.password) {
