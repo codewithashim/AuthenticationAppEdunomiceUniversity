@@ -16,10 +16,16 @@
   "author": "Codewithashim",
   "license": "ISC",
   "lint-staged": {
-    "*.{js,ts}": [
-      "yarn fix",
+    "*.{js,jsx,ts,tsx}": [
+      "yarn lint:fix",
+      "yarn prettier:fix",
       "git add"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint-prettier"
+    }
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
