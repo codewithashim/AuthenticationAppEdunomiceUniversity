@@ -3,7 +3,7 @@ import { createUserInDB } from './user.service'
 
 const createUser = async (req: Request, res: Response, next: NextFunction) => {
   try {
-    const { user } = req.body
+                       const { user } = req.body
     const result = await createUserInDB(user)
     res.status(201).json({
       success: true,
