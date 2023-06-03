@@ -16,9 +16,7 @@
   "author": "Codewithashim",
   "license": "ISC",
   "lint-staged": {
-    "src/**/*.ts": [
-      "yarn lint:fix",
-      "yarn prettier:fix",
+    "*.{js,ts}": [
       "yarn fix",
       "git add"
     ]
