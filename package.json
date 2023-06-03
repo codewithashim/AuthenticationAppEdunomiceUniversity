@@ -8,8 +8,8 @@
     "dev": "ts-node-dev --respawn --transpile-only src/server/server.ts",
     "lint:check": "eslint --ignore-path .eslintignore --ext .js,.ts .",
     "lint:fix": "eslint . --fix",
-    "prettier:check": "yarn prettier --check .  --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
-    "prettier:fix": "yarn prettier --write .  --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+    "prettier:check": "yarn prettier --check . --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+    "prettier:fix": "yarn prettier --write . --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
     "lint-prettier": "yarn lint:check && yarn prettier:check",
     "fix": "yarn lint:fix && yarn prettier:check"
   },
