@@ -16,9 +16,8 @@
   "author": "Codewithashim",
   "license": "ISC",
   "lint-staged": {
-    "*.{js,ts}": "yarn lint-prettier"
+    "*.{js,ts,jsx,tsx}": "yarn lint-prettier"
   },
-
   "devDependencies": {
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
