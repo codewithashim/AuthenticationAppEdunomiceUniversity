@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 import app from '../app/app'
 import config from '../config'
 import { Request, Response } from 'express'
-import {errorLogger, logger} from '../shared/loger'
+import { errorLogger, logger } from '../shared/loger'
 const port = config.port
 const db = config.database_url
 
