@@ -16,11 +16,7 @@
   "author": "Codewithashim",
   "license": "ISC",
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": [
-      "yarn lint:fix",
-      "yarn prettier:fix",
-      "git add"
-    ]
+    "src/**/*.{js,jsx,ts,tsx}": "yarn fix"
   },
   "husky": {
     "hooks": {
