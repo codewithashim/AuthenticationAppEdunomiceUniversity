@@ -16,7 +16,7 @@
   "author": "Codewithashim",
   "license": "ISC",
   "lint-staged": {
-    "src/**/**/*.ts": "yarn lint-prettier"
+    "*.{js,jsx,ts,tsx}": "lint-prettier"
   },
   "husky": {
     "hooks": {
