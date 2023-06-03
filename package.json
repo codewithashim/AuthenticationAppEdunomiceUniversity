@@ -13,7 +13,7 @@
     "lint-prettier": "yarn lint:check && yarn prettier:check",
     "fix": "yarn lint:fix && yarn prettier:check"
   },
-  "author": "Programming Hero",
+  "author": "Codewithashim",
   "license": "ISC",
   "lint-staged": {
     "*.{js,ts}": [

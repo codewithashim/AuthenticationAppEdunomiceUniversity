@@ -21,8 +21,6 @@
     "node": true,
     "commonjs": true,
     "browser": true,
-    "es6": true,
-    "jest": true,
-    "es12": true
+    "es6": true
    }
 }
