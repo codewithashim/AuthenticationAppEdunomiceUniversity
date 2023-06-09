@@ -1,5 +1,5 @@
 export type IGenericErrorMessage = {
-  stack: string
-  path: string | number
+  path: string
+  stack?: string
   message: string
 }

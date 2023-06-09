@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import express, { Application } from 'express'
 import dotenv from 'dotenv'
 import cors from 'cors'
@@ -26,6 +27,11 @@ app.use(globalErrorHandler)
 //              Router Setup                 //
 /////////////////////////////////////////////*/
 app.use('/api/v1/users', userRouter)
+
+app.get('/api/v1', async (req, res) => {
+  //   Promise.reject(new Error('Unhandel Error'))
+  // console.log(x)
+})
 
 ///////      End of Router Setup      ////////
 

@@ -19,4 +19,4 @@ const createUserInDB = async (user: IUser): Promise<IUser | null> => {
   }
 }
 
-export { createUserInDB }
+export const UserService = { createUserInDB }
