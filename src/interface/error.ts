@@ -1,5 +1,4 @@
 export type IGenericErrorMessage = {
-  path: string
-  stack?: string
-  message: string
-}
+  path: string | number | symbol | undefined;
+  message: string;
+};
