@@ -28,32 +28,8 @@ const getAllsemesters = async (
   filters: IAcademicSemesterFilters,
   paginationOptions: IPaginationOptions
 ): Promise<IGenericResponse<IAcademicSemester[]>> => {
-  const { searchTerm } = filters;
+  const { searchTerm, ...filtersData } = filters;
   const andConditions = [];
-  // const andConditions = [
-  //   {
-  //     $or: [
-  //       {
-  //         title: {
-  //           $regex: searchTerm,
-  //           $options: 'i',
-  //         }
-  //       },
-  //       {
-  //         code: {
-  //           $regex: searchTerm,
-  //           $options: 'i',
-  //         }
-  //       },
-  //       {
-  //         year: {
-  //           $regex: searchTerm,
-  //           $options: 'i',
-  //         }
-  //       }
-  //     ]
-  //   }
-  // ];
 
   if (searchTerm) {
     andConditions.push({
@@ -61,6 +37,19 @@ const getAllsemesters = async (
         return {
           [field]: {
             $regex: searchTerm,
+            $options: 'i',
+          },
+        };
+      }),
+    });
+  }
+
+  if (Object.keys(filtersData).length) {
+    andConditions.push({
+      $and: Object.entries(filtersData).map(([field, value]) => {
+        return {
+          [field]: {
+            $regex: value,
             $options: 'i',
           },
         };
@@ -77,9 +66,10 @@ const getAllsemesters = async (
     sortConditions[sortBy] = sortOrder;
   }
 
-  // const whereConditions = {};
+  const whereConditions =
+    andConditions.length > 0 ? { $and: andConditions } : {};
 
-  const result = await AcademicSemester.find({ $and: andConditions })
+  const result = await AcademicSemester.find(whereConditions)
     .sort(sortConditions)
     .skip(skip)
     .limit(limit);
@@ -107,17 +97,10 @@ const updateSemester = async (
   id: string,
   payload: Partial<IAcademicSemester>
 ): Promise<IAcademicSemester | null> => {
-  if (
-    payload.title &&
-    payload.code &&
-    academicSemesterTitleCodeMapper[payload.title] !== payload.code
-  ) {
-    throw new ApiError(httpStatus.BAD_REQUEST, 'Invalid Semester Code');
-  }
-
   const result = await AcademicSemester.findOneAndUpdate({ _id: id }, payload, {
     new: true,
   });
+
   return result;
 };
 

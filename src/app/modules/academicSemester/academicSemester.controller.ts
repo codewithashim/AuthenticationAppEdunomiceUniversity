@@ -54,7 +54,8 @@ const getSingleSemester = catchAsync(async (req: Request, res: Response) => {
     message: 'Semester retrieved successfully !',
     data: result,
   });
-});
+})
+
 
 const updateSemester = catchAsync(async (req: Request, res: Response) => {
   const id = req.params.id;
@@ -69,6 +70,8 @@ const updateSemester = catchAsync(async (req: Request, res: Response) => {
     data: result,
   });
 });
+
+
 const deleteSemester = catchAsync(async (req: Request, res: Response) => {
   const id = req.params.id;
 
