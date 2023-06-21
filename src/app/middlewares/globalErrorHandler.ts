@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
 /* eslint-disable no-unused-expressions */
-import { ErrorRequestHandler, NextFunction, Request, Response } from 'express';
+import { ErrorRequestHandler, Request, Response } from 'express';
 import { Error } from 'mongoose';
 import config from '../../config';
 import ApiError from '../../errors/ApiError';
@@ -16,8 +16,7 @@ import { errorlogger } from '../../shared/logger';
 const globalErrorHandler: ErrorRequestHandler = (
   error,
   req: Request,
-  res: Response,
-  next: NextFunction
+  res: Response
 ) => {
   config.env === 'development'
     ? console.log(`🐱‍🏍 globalErrorHandler ~~`, { error })
@@ -74,10 +73,3 @@ const globalErrorHandler: ErrorRequestHandler = (
 };
 
 export default globalErrorHandler;
-
-//path:
-//message:
-
-// 2025 Fall
-
-// 2025 and
