@@ -1,0 +1,25 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/codewithashim/Web Application Drive/Programming Hero/Project/University Management System/Software/Backend/logs/winston/successes/.ee782c82dddd8f6c83e4b5b67de83209d375b288-audit.json",
+    "files": [
+        {
+            "date": 1687371299714,
+            "name": "/home/codewithashim/Web Application Drive/Programming Hero/Project/University Management System/Software/Backend/logs/winston/successes/phu-2023-22-06-00-success.log",
+            "hash": "68c3bc688560190a8c37c5893dd4744f7184c1c2e3f55cd46b9fe9284c08520a"
+        },
+        {
+            "date": 1687374183029,
+            "name": "/home/codewithashim/Web Application Drive/Programming Hero/Project/University Management System/Software/Backend/logs/winston/successes/phu-2023-22-06-01-success.log",
+            "hash": "d9015b6db1486dd35db12c7cae0e420a25f46dd6788838cadfd98d122d41d424"
+        },
+        {
+            "date": 1687377601692,
+            "name": "/home/codewithashim/Web Application Drive/Programming Hero/Project/University Management System/Software/Backend/logs/winston/successes/phu-2023-22-06-02-success.log",
+            "hash": "9e262f74e728582126c2ec25954de8ae4ceaff25376e6335f887b1075128f9bc"
+        }
+    ],
+    "hashType": "sha256"
+}
