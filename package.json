@@ -2,21 +2,20 @@
   "name": "university-management-auth-service",
   "version": "1.0.0",
   "description": "",
-  "main": "src/server/server.ts",
+  "main": "src/server.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node-dev --respawn --transpile-only src/server/server.ts",
+    "start": "ts-node-dev --respawn --transpile-only src/server.ts",
     "lint:check": "eslint --ignore-path .eslintignore --ext .js,.ts .",
     "lint:fix": "eslint . --fix",
-    "prettier:check": "yarn prettier --check . --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
-    "prettier:fix": "yarn prettier --write . --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+    "prettier:check": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+    "prettier:fix": "prettier --write .",
     "lint-prettier": "yarn lint:check && yarn prettier:check",
-    "fix": "yarn lint:fix && yarn prettier:check"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Codewithashim",
   "license": "ISC",
   "lint-staged": {
-    "*.{js,ts,jsx,tsx}": "yarn lint-prettier"
+    "src/**/*.ts": "yarn lint-prettier"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
@@ -35,8 +34,10 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "http-status": "^1.6.2",
     "mongoose": "^7.2.1",
     "winston": "^3.9.0",
-    "winston-daily-rotate-file": "^4.7.1"
+    "winston-daily-rotate-file": "^4.7.1",
+    "zod": "^3.21.4"
   }
 }
