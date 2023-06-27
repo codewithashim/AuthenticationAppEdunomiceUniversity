@@ -1,0 +1,2 @@
+Sun Jun 25 2023 21:58:45 } [Edunomice University] error: Failed to connect database The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+Sun Jun 25 2023 21:59:37 } [Edunomice University] error: listen EADDRINUSE: address already in use :::8001

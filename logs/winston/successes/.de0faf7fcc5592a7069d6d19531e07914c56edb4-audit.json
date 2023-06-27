@@ -1,0 +1,45 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/codewithashim/Web Development File/Programming Hero/Project/University Management System/Backend/logs/winston/successes/.de0faf7fcc5592a7069d6d19531e07914c56edb4-audit.json",
+    "files": [
+        {
+            "date": 1687708725044,
+            "name": "/home/codewithashim/Web Development File/Programming Hero/Project/University Management System/Backend/logs/winston/successes/phu-2023-25-06-21-success.log",
+            "hash": "facec1e26b4fc25b1fa3b41737d6cd0e34d01d40520058af134bb9b43d15c60f"
+        },
+        {
+            "date": 1687709018639,
+            "name": "/home/codewithashim/Web Development File/Programming Hero/Project/University Management System/Backend/logs/winston/successes/phu-2023-25-06-22-success.log",
+            "hash": "1d932f249dc4f8fff55aed33ba63a81d3d408044e141cf46b7c50237fb86d410"
+        },
+        {
+            "date": 1687713187616,
+            "name": "/home/codewithashim/Web Development File/Programming Hero/Project/University Management System/Backend/logs/winston/successes/phu-2023-25-06-23-success.log",
+            "hash": "68083531c1975763899582d61605d8d970826e46e35f365c62b70ffa8cc3593f"
+        },
+        {
+            "date": 1687717657875,
+            "name": "/home/codewithashim/Web Development File/Programming Hero/Project/University Management System/Backend/logs/winston/successes/phu-2023-26-06-00-success.log",
+            "hash": "e0ea3b79e0d3cbf8e8c4bb869dbf76dff383184e676cb41145a5e841c56c88ff"
+        },
+        {
+            "date": 1687719617967,
+            "name": "/home/codewithashim/Web Development File/Programming Hero/Project/University Management System/Backend/logs/winston/successes/phu-2023-26-06-01-success.log",
+            "hash": "8f3063b742505c968a822f69fb4827b58ba6bb864f860952aa533d04f44a28e4"
+        },
+        {
+            "date": 1687723808395,
+            "name": "/home/codewithashim/Web Development File/Programming Hero/Project/University Management System/Backend/logs/winston/successes/phu-2023-26-06-02-success.log",
+            "hash": "ff90ddcd766299a899c22f111e67a6f18654fa11185d7ca29f42f0c4b3bfd795"
+        },
+        {
+            "date": 1687853651585,
+            "name": "/home/codewithashim/Web Development File/Programming Hero/Project/University Management System/Backend/logs/winston/successes/phu-2023-27-06-14-success.log",
+            "hash": "80743298be3a977c9f011f475a0f25e072048c982d2dba91f775699d048c1167"
+        }
+    ],
+    "hashType": "sha256"
+}

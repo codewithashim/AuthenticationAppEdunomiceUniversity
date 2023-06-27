@@ -1,0 +1,45 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/codewithashim/Web Development File/Programming Hero/Project/University Management System/Backend/logs/winston/errors/.c2ab0bb5741be26ff32769f894eda2fd3cc7f319-audit.json",
+    "files": [
+        {
+            "date": 1687708725049,
+            "name": "/home/codewithashim/Web Development File/Programming Hero/Project/University Management System/Backend/logs/winston/errors/phu-2023-25-06-21-error.log",
+            "hash": "00bb1223cb2f45bb0b4e4979106a0baec213848c18b295ee2228772594984503"
+        },
+        {
+            "date": 1687709018656,
+            "name": "/home/codewithashim/Web Development File/Programming Hero/Project/University Management System/Backend/logs/winston/errors/phu-2023-25-06-22-error.log",
+            "hash": "fda9c9333933a486e76ba95bb78e110ec1e32fd3995840f2b1f6e70c7405740d"
+        },
+        {
+            "date": 1687713187634,
+            "name": "/home/codewithashim/Web Development File/Programming Hero/Project/University Management System/Backend/logs/winston/errors/phu-2023-25-06-23-error.log",
+            "hash": "12b379bb15d09e28d94b36769d176013c9eaee2d54f568c0494d796538ad688b"
+        },
+        {
+            "date": 1687717657887,
+            "name": "/home/codewithashim/Web Development File/Programming Hero/Project/University Management System/Backend/logs/winston/errors/phu-2023-26-06-00-error.log",
+            "hash": "dde20545894f8d9880a2661f355ec354f60e11316306b8af6c3e6e3ff0e9eda3"
+        },
+        {
+            "date": 1687719617975,
+            "name": "/home/codewithashim/Web Development File/Programming Hero/Project/University Management System/Backend/logs/winston/errors/phu-2023-26-06-01-error.log",
+            "hash": "3d276651a31a2de192780739d23a11465e1b120d4ca18bf281c92f463e229213"
+        },
+        {
+            "date": 1687723808403,
+            "name": "/home/codewithashim/Web Development File/Programming Hero/Project/University Management System/Backend/logs/winston/errors/phu-2023-26-06-02-error.log",
+            "hash": "bd88a832db7bc4a003e57325085adebe6a12ae6be618ed680f9decf7ffaad900"
+        },
+        {
+            "date": 1687853651590,
+            "name": "/home/codewithashim/Web Development File/Programming Hero/Project/University Management System/Backend/logs/winston/errors/phu-2023-27-06-14-error.log",
+            "hash": "a07b5e758c190558abed2e75c598a5579580b3f71344e7983cd630d9d00f8405"
+        }
+    ],
+    "hashType": "sha256"
+}
