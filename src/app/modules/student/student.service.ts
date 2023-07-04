@@ -102,6 +102,7 @@ const updateStudent = async (
       (updatedStudentData as any)[nameKey] = name[key as keyof typeof name];
     });
   }
+
   if (guardian && Object.keys(guardian).length) {
     Object.keys(guardian).forEach(key => {
       const guardianKey = `guardian.${key}`;

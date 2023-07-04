@@ -40,6 +40,7 @@ const getAllDepartments = async (
   }
 
   const sortConditions: { [key: string]: SortOrder } = {};
+  
 
   if (sortBy && sortOrder) {
     sortConditions[sortBy] = sortOrder;
@@ -68,6 +69,7 @@ const getAllDepartments = async (
 const createDepartment = async (
   payload: IAcademicDepartment
 ): Promise<IAcademicDepartment | null> => {
+
   const result = (await AcademicDepartment.create(payload)).populate(
     'academicFaculty'
   );

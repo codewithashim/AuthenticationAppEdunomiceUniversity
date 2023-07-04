@@ -1,8 +1,8 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-unused-expressions */
-import { ErrorRequestHandler, Request, Response } from 'express';
-import { Error } from 'mongoose';
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { ErrorRequestHandler, NextFunction, Request, Response } from 'express';
 import config from '../../config';
 import ApiError from '../../errors/ApiError';
 import handleValidationError from '../../errors/handleValidationError';
@@ -16,7 +16,8 @@ import { errorlogger } from '../../shared/logger';
 const globalErrorHandler: ErrorRequestHandler = (
   error,
   req: Request,
-  res: Response
+  res: Response,
+  next: NextFunction
 ) => {
   config.env === 'development'
     ? console.log(`🐱‍🏍 globalErrorHandler ~~`, { error })

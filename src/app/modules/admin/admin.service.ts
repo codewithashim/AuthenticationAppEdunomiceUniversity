@@ -98,7 +98,6 @@ const updateAdmin = async (
 };
 
 const deleteAdmin = async (id: string): Promise<IAdmin | null> => {
-  // check if the faculty is exist
   const isExist = await Admin.findOne({ id });
 
   if (!isExist) {
