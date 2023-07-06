@@ -1,11 +1,14 @@
 import httpStatus from 'http-status';
-import ApiError from '../../../errors/ApiError';
-import { User } from '../user/user.model';
-import { ILoginUser, ILoginUserResponse } from './auth.interface';
 import { Secret } from 'jsonwebtoken';
 import config from '../../../config';
+import ApiError from '../../../errors/ApiError';
 import { jwtHelper } from '../../../helpers/jwtHelper';
-import jwt from 'jsonwebtoken';
+import { User } from '../user/user.model';
+import {
+  ILoginUser,
+  ILoginUserResponse,
+  IRefreshTokenResponse,
+} from './auth.interface';
 
 const loginUser = async (payload: ILoginUser): Promise<ILoginUserResponse> => {
   const { id, password } = payload;
@@ -52,14 +55,14 @@ const loginUser = async (payload: ILoginUser): Promise<ILoginUserResponse> => {
   };
 };
 
-const refreshToken = async (refreshToken: string): Promise<T> => {
+const refreshToken = async (token: string): Promise<IRefreshTokenResponse> => {
   // verify that the refresh token
   let verifiedToken = null;
 
   try {
-    verifiedToken = jwt.verify(
-      config.jwt.refresh_secret as string,
-      refreshToken
+    verifiedToken = jwtHelper.verifyToken(
+      token,
+      config.jwt.refresh_secret as Secret
     );
   } catch (error) {
     throw new ApiError(httpStatus.UNAUTHORIZED, 'Invalid refresh token');
@@ -74,12 +77,12 @@ const refreshToken = async (refreshToken: string): Promise<T> => {
     throw new ApiError(httpStatus.NOT_FOUND, 'User not found');
   }
 
-  if (role!== 'admin') {
+  if (role !== 'admin') {
     throw new ApiError(httpStatus.FORBIDDEN, 'Forbidden');
   }
 
   // create access token and refresh token
-  const accessToken = jwtHelper.createToken(
+  const newAccessToken = jwtHelper.createToken(
     {
       userId,
       role,
@@ -88,20 +91,13 @@ const refreshToken = async (refreshToken: string): Promise<T> => {
     config.jwt.expiresIn as string
   );
 
-  const refreshToken = jwtHelper.createToken(
-    {
-      userId,
-      role,
-    },
-    config.jwt.refresh_secret as Secret,
-    config.jwt.refresh_expires as string
-  );
-
   return {
-    accessToken,
-    refreshToken,
+    accessToken: newAccessToken,
   };
 };
+
+
+
 
 export const AuthService = {
   loginUser,

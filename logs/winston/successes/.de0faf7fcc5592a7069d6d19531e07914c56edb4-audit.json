@@ -84,6 +84,21 @@
             "date": 1688504412039,
             "name": "/home/codewithashim/Web Development File/Programming Hero/Project/University Management System/Backend/logs/winston/successes/phu-2023-05-07-03-success.log",
             "hash": "e566bb928097e101c58c7150062fa3ec3a0a586728eb99e01e09aa9efc5e564f"
+        },
+        {
+            "date": 1688667932417,
+            "name": "/home/codewithashim/Web Development File/Programming Hero/Project/University Management System/Backend/logs/winston/successes/phu-2023-07-07-00-success.log",
+            "hash": "32805870f97db5d8865789a9a8d42170edba69308cb1328e2e73eb392a7882b9"
+        },
+        {
+            "date": 1688670177734,
+            "name": "/home/codewithashim/Web Development File/Programming Hero/Project/University Management System/Backend/logs/winston/successes/phu-2023-07-07-01-success.log",
+            "hash": "e69a44792df0458203eb1d9b8fb247dda9dfe8e1aa4f5f51972af8a41c684798"
+        },
+        {
+            "date": 1688674043803,
+            "name": "/home/codewithashim/Web Development File/Programming Hero/Project/University Management System/Backend/logs/winston/successes/phu-2023-07-07-02-success.log",
+            "hash": "97f7d4f1e6b3353953436b8aa8b205a5d0bcc2a8fd30dc59fb605a5aa8359933"
         }
     ],
     "hashType": "sha256"
