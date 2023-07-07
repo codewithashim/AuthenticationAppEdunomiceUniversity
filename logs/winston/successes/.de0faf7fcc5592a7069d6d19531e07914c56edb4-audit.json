@@ -99,6 +99,16 @@
             "date": 1688674043803,
             "name": "/home/codewithashim/Web Development File/Programming Hero/Project/University Management System/Backend/logs/winston/successes/phu-2023-07-07-02-success.log",
             "hash": "97f7d4f1e6b3353953436b8aa8b205a5d0bcc2a8fd30dc59fb605a5aa8359933"
+        },
+        {
+            "date": 1688753909064,
+            "name": "/home/codewithashim/Web Development File/Programming Hero/Project/University Management System/Backend/logs/winston/successes/phu-2023-08-07-00-success.log",
+            "hash": "6cf797b82602b86b4ccbd73991eb7ab33ca158092b142903ed5006807bd73e1f"
+        },
+        {
+            "date": 1688756400512,
+            "name": "/home/codewithashim/Web Development File/Programming Hero/Project/University Management System/Backend/logs/winston/successes/phu-2023-08-07-01-success.log",
+            "hash": "aca640ba26342ce2e4f13487715a2446af1b90e03c3c7c9918583c7404002f87"
         }
     ],
     "hashType": "sha256"
